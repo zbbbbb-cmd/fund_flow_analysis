@@ -2724,6 +2724,7 @@ class DatePicker(ttk.Frame):
         self.date_entry = DateEntry(
             self, 
             textvariable=self.date_var, 
+            locale='zh_CN',  # 设置中文显示
             width=12, 
             date_pattern='yyyy-mm-dd',
             background='darkblue',
@@ -2759,6 +2760,7 @@ class DatePicker(ttk.Frame):
         cal = Calendar(
             top,
             font="Arial 10",
+            ocale='zh_CN',  # 设置中文显示
             selectmode='day',
             cursor="hand1",
             year=self.get_date().year,
